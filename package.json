@@ -1,0 +1,22 @@
+{
+  "name": "web-chiritori",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview",
+    "postinstall": "cd src/external && ln -s ../../node_modules/@piyoppi/chiritori-wasm chiritori-wasm"
+  },
+  "dependencies": {
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@piyoppi/chiritori-wasm": "0.1.0",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.1",
+    "vue-tsc": "^2.1.10"
+  }
+}
